@@ -12,47 +12,47 @@ import es.fpdual.primero.eadmin.modelo.Documento;
 public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 
 	private final List<Documento> documentos = new ArrayList<>();
-	
 
 	@Override
 	public void altaDocumento(Documento documento) {
-		
-		if(documentos.contains(documento)) {
+
+		if (documentos.contains(documento)) {
 			throw new AdministracionElectronicaException("El documento ya existe.");
 		}
-		
+
 		documentos.add(documento);
 	}
 
 	@Override
 	public void modificarDocumento(Documento documento) {
-		
-		if(!documentos.contains(documento)) {
+
+		if (!documentos.contains(documento)) {
 			throw new AdministracionElectronicaException("El documento no existe.");
 		}
-		
+
 		documentos.set(documentos.indexOf(documento), documento);
 	}
 
 	@Override
 	public void eliminarDocumento(int codigoDocumento) {
-		
-		if(!documentos.contains(documentos.get(codigoDocumento))) {
+
+		if (!documentos.contains(documentos.get(codigoDocumento))) {
 			throw new AdministracionElectronicaException("El documento no existe.");
 		}
-		
-		//solucion 1
+
+		// solucion 1
 		final Documento documentoAEliminar = new Documento(codigoDocumento, null, null, null, null);
-		
+
 		final int indice = documentos.indexOf(documentoAEliminar);
-		
+
 		documentos.remove(indice);
-		
-		//solucion 2
-//		documentoAEliminar = documentos.stream().filter(d -> d.getId().intValue==codigoDocumento).findAny().orElse(null);
-		
-		//documentos.remove(documentos.indexOf(documentos.get(codigoDocumento)));
-		
+
+		// solucion 2
+		// documentoAEliminar = documentos.stream().filter(d ->
+		// d.getId().intValue==codigoDocumento).findAny().orElse(null);
+
+		// documentos.remove(documentos.indexOf(documentos.get(codigoDocumento)));
+
 	}
 
 	@Override
@@ -66,5 +66,5 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
+
 }
