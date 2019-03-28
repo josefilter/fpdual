@@ -22,6 +22,7 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 		}
 
 		documentos.add(documento);
+		System.out.println("Documeto " + documento.getNombre() + " almacenado correctamente");
 	}
 
 	@Override
