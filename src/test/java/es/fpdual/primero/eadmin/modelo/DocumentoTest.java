@@ -1,11 +1,11 @@
-package modeloTest;
+package es.fpdual.primero.eadmin.modelo;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import modelo.Documento;
+import es.fpdual.primero.eadmin.modelo.Documento;
 
 public class DocumentoTest {
 	

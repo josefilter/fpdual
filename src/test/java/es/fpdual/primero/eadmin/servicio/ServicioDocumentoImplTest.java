@@ -1,11 +1,11 @@
-package es.fpdual.primero.eadmin.servicioTest;
+package es.fpdual.primero.eadmin.servicio;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import es.fpdual.primero.eadmin.modelo.Documento;
 import es.fpdual.primero.eadmin.repositorio.RepositorioDocumento;
 import es.fpdual.primero.eadmin.servicio.ServicioDocumentoImpl;
-import modelo.Documento;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -20,6 +20,8 @@ public class ServicioDocumentoImplTest {
 	RepositorioDocumento repositorioDocumento;
 	
 	ServicioDocumentoImpl servicioDocumento;
+	
+	private final Documento documento = mock(Documento.class);
 	
 	@Before
 	public void inicializarAntesDeCadaTest() {
@@ -42,15 +44,9 @@ public class ServicioDocumentoImplTest {
 	@Test
 	public void deberiaModificarUnDocumentos() {
 		
-		Documento documento = mock(Documento.class);
+		servicioDocumento.modificarDocumento(documento);
 		
-		Documento documentoDevuletoPorElRepositorio = mock(Documento.class);
-		
-		when(repositorioDocumento.modificarDocumento(documento)).thenReturn(documentoDevuletoPorElRepositorio);
-		
-		final Documento resultado = servicioDocumento.modificarDocumento(documento);
-		
-		assertEquals(documentoDevuletoPorElRepositorio, resultado);
+		verify(this.repositorioDocumento).modificarDocumento(documento);
 		
 	}
 	
@@ -60,6 +56,15 @@ public class ServicioDocumentoImplTest {
 		this.servicioDocumento.eliminarDocumento(2);
 		
 		verify(this.repositorioDocumento).eliminarDocumento(2);
+		
+	}
+	
+	@Test
+	public void deberiaAlmacenarDocumento() {
+		
+		when(this.repositorioDocumento.getSiguienteID()).thenReturn(22);
+		
+		final Documento resultado = this.servicioDocumento.altaDocumento(documento);
 		
 	}
 }

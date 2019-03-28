@@ -1,4 +1,4 @@
-package modelo;
+package es.fpdual.primero.eadmin.modelo;
 
 public class Usuario {
 

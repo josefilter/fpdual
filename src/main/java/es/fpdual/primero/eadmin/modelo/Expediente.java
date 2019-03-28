@@ -1,4 +1,4 @@
-package modelo;
+package es.fpdual.primero.eadmin.modelo;
 
 import java.util.ArrayList;
 import java.util.Date;

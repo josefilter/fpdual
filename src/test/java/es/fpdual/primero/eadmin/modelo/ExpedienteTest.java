@@ -1,4 +1,4 @@
-package modeloTest;
+package es.fpdual.primero.eadmin.modelo;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -11,12 +11,12 @@ import java.util.stream.Collectors;
 import org.junit.Test;
 import org.springframework.util.SocketUtils;
 
-import modelo.Documento;
-import modelo.DocumentoContable;
-import modelo.Expediente;
-import modelo.TipoDocumento;
-import modelo.TipoExpediente;
-import modelo.Usuario;
+import es.fpdual.primero.eadmin.modelo.Documento;
+import es.fpdual.primero.eadmin.modelo.DocumentoContable;
+import es.fpdual.primero.eadmin.modelo.Expediente;
+import es.fpdual.primero.eadmin.modelo.TipoDocumento;
+import es.fpdual.primero.eadmin.modelo.TipoExpediente;
+import es.fpdual.primero.eadmin.modelo.Usuario;
 
 public class ExpedienteTest {
 

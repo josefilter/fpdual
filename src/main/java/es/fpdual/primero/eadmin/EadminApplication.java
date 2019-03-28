@@ -6,10 +6,10 @@ import java.util.Date;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import modelo.Documento;
-import modelo.DocumentoContable;
-import modelo.TipoDocumento;
-import modelo.Usuario;
+import es.fpdual.primero.eadmin.modelo.Documento;
+import es.fpdual.primero.eadmin.modelo.DocumentoContable;
+import es.fpdual.primero.eadmin.modelo.TipoDocumento;
+import es.fpdual.primero.eadmin.modelo.Usuario;
 
 
 @SpringBootApplication

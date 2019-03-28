@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import modelo.Documento;
+import es.fpdual.primero.eadmin.modelo.Documento;
 import es.fpdual.primero.eadmin.repositorio.RepositorioDocumento;
 
 @Service
@@ -27,12 +27,12 @@ public class ServicioDocumentoImpl implements ServicioDocumento {
 		
 		Documento documentoModificado = new Documento(siguienteID, documento.getNombre(), documento.getUsuario(), fechaActual, documento.getTipoDocumento());
 		
-		return repositorioDocumento.altaDocumento(documentoModificado);
+		return documentoModificado;
 	}
-
+	
 	@Override
-	public Documento modificarDocumento(Documento documento) {
-		return repositorioDocumento.modificarDocumento(documento);
+	public void modificarDocumento(Documento documento) {
+		repositorioDocumento.modificarDocumento(documento);
 	}
 
 	@Override
