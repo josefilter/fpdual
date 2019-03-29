@@ -3,10 +3,12 @@ package es.fpdual.primero.eadmin.repositorio;
 import org.junit.Before;
 import org.junit.Test;
 
+
 import es.fpdual.primero.eadmin.modelo.AdministracionElectronicaException;
 import es.fpdual.primero.eadmin.modelo.Documento;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
@@ -49,11 +51,6 @@ public class RepositorioDocumentoEnListaTest {
 		Documento documentoAlmacenado = new Documento(20, "doc1", null, null, null);
 		Documento documentoModificado = new Documento(20, "doc2", null, null, null);
 		
-//		when(documento.getNombre()).thenReturn("documento 1");
-//		when(documento.getId()).thenReturn(5);	
-//		when(documentoModificado.getNombre()).thenReturn("documento modificado");
-//		when(documentoModificado.getId()).thenReturn(5);
-		
 		this.repositorioDocumento.altaDocumento(documentoAlmacenado);
 		this.repositorioDocumento.modificarDocumento(documentoModificado);
 		
@@ -63,8 +60,47 @@ public class RepositorioDocumentoEnListaTest {
 	@Test (expected = AdministracionElectronicaException.class)
 	public void deberiaLanzarUnaExcepcionAlModificarUnDocumentoNoExistente() {
 		
-		final Documento documentoModificado = mock(Documento.class);
-		
 		this.repositorioDocumento.modificarDocumento(documento);
+	}
+	
+	@Test
+	public void deberiaEliminarDocumento() {
+
+		when(documento.getId()).thenReturn(5);
+		when(documento.getNombre()).thenReturn("documentoAEliminar");
+		
+		this.repositorioDocumento.altaDocumento(documento);
+		this.repositorioDocumento.eliminarDocumento(5);
+		
+		//Todos funcionan
+//		assertFalse(this.repositorioDocumento.obtenerTodosLosDocumento().contains(documento));
+		assertTrue(this.repositorioDocumento.obtenerTodosLosDocumento().isEmpty());
+//		assertEquals(this.repositorioDocumento.obtenerTodosLosDocumento().size(), 0);
+	}
+	
+	@Test
+	public void deberiaNoHacerNadaSiElDocumentoNoExiste() {
+		
+		this.repositorioDocumento.eliminarDocumento(20);
+	}
+	
+	@Test
+	public void deberiaDevolverElSiguienteID() {
+		
+		when(documento.getId()).thenReturn(20);
+		when(documento.getNombre()).thenReturn("documento nuevo");
+		
+		this.repositorioDocumento.altaDocumento(documento);
+		final int resultado = this.repositorioDocumento.getSiguienteID();
+		
+		assertEquals(21, resultado);
+	}
+	
+	@Test
+	public void deberiaDevolverUnoSiLaListaEstaVacia() {
+		
+		final int resultado = this.repositorioDocumento.getSiguienteID();
+		
+		assertEquals(1, resultado);
 	}
 }

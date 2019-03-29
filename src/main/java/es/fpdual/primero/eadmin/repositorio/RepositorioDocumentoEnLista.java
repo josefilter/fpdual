@@ -41,12 +41,13 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 		// solucion 1
 		Documento documentoAEliminar = new Documento(id, null, null, null, null);
 		// solucion 2
-		documentoAEliminar = documentos.stream().filter(d -> d.getId() == id).findAny().orElse(null);
+//		documentoAEliminar = documentos.stream().filter(d -> d.getId() == id).findAny().orElse(null);
 
 		final int indice = documentos.indexOf(documentoAEliminar);
 
-		documentos.remove(indice);
-
+		if (indice > -1) {
+			documentos.remove(indice);
+		}
 	}
 
 	@Override
