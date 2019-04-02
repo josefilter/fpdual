@@ -1,43 +1,47 @@
 package es.fpdual.primero.eadmin.controlador;
 
-import java.util.Date;
-
 public class DocumentoRequest {
 	
-	private final int id;
-	private final String nombre;
-	private final String usuario;
-	private final Date fechaCreacion;
-	private final String tipoDocumento;
+	private String nombre;
+	private String usuario;
+	private String tipoDocumento;
 	
-	
-	public DocumentoRequest(int id, String nombre, String usuario, Date fechaCreacion, String tipoDocumento) {
+
+	public DocumentoRequest() {
 		super();
-		this.id = id;
+	}
+
+
+	public DocumentoRequest(String nombre, String usuario, String tipoDocumento) {
 		this.nombre = nombre;
 		this.usuario = usuario;
-		this.fechaCreacion = fechaCreacion;
 		this.tipoDocumento = tipoDocumento;
 	}
 
-
-	public int getId() {
-		return id;
-	}
 
 	public String getNombre() {
 		return nombre;
 	}
 
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	
 	public String getUsuario() {
 		return usuario;
 	}
 
-	public Date getFechaCreacion() {
-		return fechaCreacion;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
+
 
 	public String getTipoDocumento() {
 		return tipoDocumento;
+	}
+
+	public void setTipoDocumento(String tipoDocumento) {
+		this.tipoDocumento = tipoDocumento;
 	}
 }

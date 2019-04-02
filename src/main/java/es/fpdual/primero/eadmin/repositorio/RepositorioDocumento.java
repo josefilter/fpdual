@@ -12,5 +12,6 @@ public interface RepositorioDocumento {
 	public List<Documento> obtenerTodosLosDocumento();
 	
 	public int getSiguienteID();
+	public Documento obtenerDocumentoPorId(int codigoDocumento);
 	
 }

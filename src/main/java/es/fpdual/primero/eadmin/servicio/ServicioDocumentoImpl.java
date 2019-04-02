@@ -27,6 +27,8 @@ public class ServicioDocumentoImpl implements ServicioDocumento {
 		
 		Documento documentoModificado = new Documento(siguienteID, documento.getNombre(), documento.getUsuario(), fechaActual, documento.getTipoDocumento());
 		
+		repositorioDocumento.altaDocumento(documentoModificado);
+		
 		return documentoModificado;
 	}
 	
@@ -45,6 +47,12 @@ public class ServicioDocumentoImpl implements ServicioDocumento {
 	public List<Documento> obtenerTodosLosDocumento() {
 		
 		return repositorioDocumento.obtenerTodosLosDocumento();
+	}
+	
+	@Override
+	public Documento obtenerDocumentoPorId(int codigoDocumento) {
+		
+		return this.repositorioDocumento.obtenerDocumentoPorId(codigoDocumento);
 	}
 
 	
