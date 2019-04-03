@@ -1,2 +1,22 @@
-2019-04-03 11:51:50 INFO  EadminApplication:20 - Iniciando servicio
-2019-04-03 11:51:53 INFO  EadminApplication:24 - Finalizando servicio
+2019-04-03 13:42:02 INFO  EadminApplication:22 - Iniciando servicio
+2019-04-03 13:42:04 DEBUG EadminApplication:17 - Se ha creado un documento contable
+2019-04-03 13:42:04 INFO  EadminApplication:28 - Finalizando servicio
+2019-04-03 13:42:11 TRACE EadminApplication:32 - 
+**********************************************
+2019-04-03 13:42:11 TRACE EadminApplication:33 - 
+Documeto creado correctamente
+2019-04-03 13:42:11 TRACE EadminApplication:34 - 
+ID: 1
+2019-04-03 13:42:11 TRACE EadminApplication:35 - 
+NOMBRE: nuevo documento
+2019-04-03 13:42:11 TRACE EadminApplication:36 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-03 13:42:11 TRACE EadminApplication:37 - 
+FECHA CREACION: Wed Apr 03 13:42:11 CEST 2019
+2019-04-03 13:42:11 TRACE EadminApplication:38 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-03 13:42:11 TRACE EadminApplication:39 - 
+**********************************************

@@ -7,7 +7,6 @@
 		<param name="MaxBackupIndex" value="5"/>
 		<param name="Threshold" value="INFO"/>
 		<param name="File" value="salida.log"/>
-		
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
 	    </layout>
@@ -18,4 +17,20 @@
 		<appender-ref ref="file" />
 	</root>
 
+
+	<appender name="fichero" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="100KB"/>
+		<param name="MaxBackupIndex" value="5"/>
+		<param name="Threshold" value="TRACE"/>
+		<param name="File" value="salida.log"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+	    </layout>
+	</appender>
+
+	<root>
+		<level value="TRACE" />
+		<appender-ref ref="fichero" />
+	</root>
+	
 </log4j:configuration>

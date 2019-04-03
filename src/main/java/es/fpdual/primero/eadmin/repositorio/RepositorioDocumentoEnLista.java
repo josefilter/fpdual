@@ -29,7 +29,14 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 			logger.warn("El documento ya existe", new AdministracionElectronicaException("El documento ya existe"));
 		}
 		documentos.add(documento);
-		logger.info(documento.toString());
+		logger.trace("\n**********************************************");
+		logger.trace("\nDocumeto creado correctamente");
+		logger.trace("\nID: " + documento.getId()); 
+		logger.trace("\nNOMBRE: " + documento.getNombre()); 
+		logger.trace("\nUSUARIO: " + documento.getUsuario()); 
+		logger.trace("\nFECHA CREACION: " + documento.getFechaCreacion());
+		logger.trace("\nTIPO DOCUMENTO: " + documento.getTipoDocumento());
+		logger.trace("\n**********************************************");
 	}
 
 	@Override
