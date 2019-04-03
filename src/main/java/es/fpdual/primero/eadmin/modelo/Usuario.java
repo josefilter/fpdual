@@ -37,5 +37,12 @@ public class Usuario {
 	public int hashCode() {
 		return this.id;
 	}
+
+	@Override
+	public String toString() {
+		return "\n	id: " + id + "\n	nombre: " + nombre + "\n	cargo: " + cargo;
+	}
+	
+	
 	
 }

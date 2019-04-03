@@ -32,6 +32,13 @@ public class Documento extends AdministracionElectronicaBase {
 	
 	@Override
 	public String toString() {
-		return "Documento: " + id + ", nombre: " + nombre;
+		return "\n**********************************************" +
+				"\nDocumeto creado correctamente" +
+				"\nID: " + this.getId() + 
+				"\nNOMBRE: " + this.getNombre() + 
+				"\nUSUARIO: " + this.getUsuario() + 
+				"\nFECHA CREACION: " + this.getFechaCreacion() + 
+				"\nTIPO DOCUMENTO: " + this.getTipoDocumento() + 
+				"\n**********************************************";
 	}
 }

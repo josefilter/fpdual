@@ -1,11 +1,16 @@
 package es.fpdual.primero.eadmin.repositorio;
 
 import java.util.ArrayList;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Repository;
 
+import es.fpdual.primero.eadmin.EadminApplication;
 import es.fpdual.primero.eadmin.modelo.AdministracionElectronicaException;
 import es.fpdual.primero.eadmin.modelo.Documento;
 
@@ -13,26 +18,30 @@ import es.fpdual.primero.eadmin.modelo.Documento;
 public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 
 	private final List<Documento> documentos = new ArrayList<>();
-
+	private static final Logger logger = LogManager.getLogger(EadminApplication.class);
+	
+	
 	@Override
 	public void altaDocumento(Documento documento) {
 
 		if (documentos.contains(documento)) {
-			throw new AdministracionElectronicaException("El documento ya existe.");
+//			throw new AdministracionElectronicaException("El documento ya existe.");
+			logger.warn("El documento ya existe", new AdministracionElectronicaException("El documento ya existe"));
 		}
-
 		documentos.add(documento);
-		System.out.println("Documeto " + documento.getNombre() + " almacenado correctamente");
+		logger.info(documento.toString());
 	}
 
 	@Override
 	public void modificarDocumento(Documento documento) {
 
 		if (!documentos.contains(documento)) {
-			throw new AdministracionElectronicaException("El documento no existe.");
+//			throw new AdministracionElectronicaException("El documento no existe.");
+			logger.warn("El documento no existe", new AdministracionElectronicaException("El documento no existe"));
 		}
 
 		documentos.set(documentos.indexOf(documento), documento);
+		logger.info(documento.toString());
 	}
 
 	@Override
