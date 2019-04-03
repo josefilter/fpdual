@@ -14,7 +14,7 @@ public class DocumentoContable extends Documento {
 	public DocumentoContable(int id, String nombre, Usuario usuario, Date fechaCreacion, String numeroOperacionContable) {
 		super(id, nombre, usuario, fechaCreacion, TipoDocumento.DOCUMENTO_CONTABLE);
 		this.numeroOperacionContable = numeroOperacionContable;
-		logger.debug("Se ha creado un documento contable");
+		logger.trace("Se ha creado un documento contable");
 	}
 
 	public String getNumeroOperacionContable() {

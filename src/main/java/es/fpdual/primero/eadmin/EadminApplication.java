@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import es.fpdual.primero.eadmin.modelo.DocumentoContable;
+import es.fpdual.primero.eadmin.modelo.DocumentoFactura;
 
 
 
@@ -24,6 +25,7 @@ public class EadminApplication {
 		SpringApplication.run(EadminApplication.class, args);
 		
 		DocumentoContable documentoContable = new DocumentoContable(0, null, null, null, null);
+		DocumentoFactura documentoFactura = new DocumentoFactura(0, null, null, null, 0.0);
 		
 		logger.info("Finalizando servicio");
 		
