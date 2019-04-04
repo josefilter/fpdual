@@ -1,0 +1,8 @@
+ID: 2
+Nombre: Documento 4
+Usuario: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+Fecha Creacion: Thu Apr 04 12:26:14 CEST 2019
+Tipo Documento: DOCUMENTO_CONTABLE

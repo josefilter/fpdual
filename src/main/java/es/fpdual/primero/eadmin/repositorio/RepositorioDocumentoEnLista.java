@@ -1,5 +1,11 @@
 package es.fpdual.primero.eadmin.repositorio;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
 import java.util.ArrayList;
 
 import org.apache.log4j.LogManager;
@@ -19,21 +25,40 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 
 	private final List<Documento> documentos = new ArrayList<>();
 	private static final Logger logger = LogManager.getLogger(EadminApplication.class);
-	
-	
+
 	@Override
 	public void altaDocumento(Documento documento) {
-
-		if (documentos.contains(documento)) {
-//			throw new AdministracionElectronicaException("El documento ya existe.");
-			logger.warn("El documento ya existe", new AdministracionElectronicaException("El documento ya existe"));
-		}
+		
 		documentos.add(documento);
+		try {
+			String nombre = (documento.getNombre() + "-" + documento.getTipoDocumento() + ".txt");
+			File fichero2 = new File(nombre);
+			
+			if (fichero2.exists()) {
+				logger.error("El fichero YA existe");
+			} else {
+				logger.error("El fichero no existe");
+				FileWriter fichero = new FileWriter(documento.getNombre() + "-" + documento.getTipoDocumento() + ".txt");
+				PrintWriter impFichero = new PrintWriter(fichero);
+				
+				impFichero.println("ID: " + documento.getId());
+				impFichero.println("Nombre: " + documento.getNombre());
+				impFichero.println("Usuario: " + documento.getUsuario());
+				impFichero.println("Fecha Creacion: " + documento.getFechaCreacion());
+				impFichero.println("Tipo Documento: " + documento.getTipoDocumento());
+
+				impFichero.close();
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		logger.trace("\n**********************************************");
 		logger.trace("\nDocumeto creado correctamente");
-		logger.trace("\nID: " + documento.getId()); 
-		logger.trace("\nNOMBRE: " + documento.getNombre()); 
-		logger.trace("\nUSUARIO: " + documento.getUsuario()); 
+		logger.trace("\nID: " + documento.getId());
+		logger.trace("\nNOMBRE: " + documento.getNombre());
+		logger.trace("\nUSUARIO: " + documento.getUsuario());
 		logger.trace("\nFECHA CREACION: " + documento.getFechaCreacion());
 		logger.trace("\nTIPO DOCUMENTO: " + documento.getTipoDocumento());
 		logger.trace("\n**********************************************");
@@ -43,7 +68,7 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 	public void modificarDocumento(Documento documento) {
 
 		if (!documentos.contains(documento)) {
-//			throw new AdministracionElectronicaException("El documento no existe.");
+			// throw new AdministracionElectronicaException("El documento no existe.");
 			logger.warn("El documento no existe", new AdministracionElectronicaException("El documento no existe"));
 		}
 
@@ -57,7 +82,8 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 		// solucion 1
 		Documento documentoAEliminar = new Documento(id, null, null, null, null);
 		// solucion 2
-//		documentoAEliminar = documentos.stream().filter(d -> d.getId() == id).findAny().orElse(null);
+		// documentoAEliminar = documentos.stream().filter(d -> d.getId() ==
+		// id).findAny().orElse(null);
 
 		final int indice = documentos.indexOf(documentoAEliminar);
 
@@ -68,7 +94,23 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 
 	@Override
 	public List<Documento> obtenerTodosLosDocumento() {
-
+		
+		try {
+		FileWriter fichero = new FileWriter("ListaDocumento.txt");
+		PrintWriter impFichero = new PrintWriter(fichero);
+		
+		for(Documento documento: documentos) {
+			impFichero.println("-------------------------------");
+			impFichero.println("ID: " + documento.getId());
+			impFichero.println("Nombre: " + documento.getNombre());
+			impFichero.println("Usuario: " + documento.getUsuario());
+			impFichero.println("Fecha Creacion: " + documento.getFechaCreacion());
+			impFichero.println("Tipo Documento: " + documento.getTipoDocumento());
+		}
+		impFichero.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		return this.documentos.stream().collect(Collectors.toList());
 	}
 
@@ -83,7 +125,7 @@ public class RepositorioDocumentoEnLista implements RepositorioDocumento {
 
 	@Override
 	public Documento obtenerDocumentoPorId(int codigoDocumento) {
-		
+
 		return documentos.stream().filter(d -> d.getId() == codigoDocumento).findFirst().orElse(null);
 	}
 
