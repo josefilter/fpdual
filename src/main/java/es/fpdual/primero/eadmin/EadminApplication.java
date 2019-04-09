@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import es.fpdual.primero.eadmin.Qr.CrearQr;
 import es.fpdual.primero.eadmin.modelo.DocumentoContable;
 import es.fpdual.primero.eadmin.modelo.DocumentoFactura;
 import es.fpdual.primero.eadmin.pdf.LogPdf;
@@ -32,5 +33,6 @@ public class EadminApplication {
 		logger.info("Finalizando servicio");
 		
 		LogPdf.logToPdf();
+		CrearQr.CrearQrPdf();
 	}
 }

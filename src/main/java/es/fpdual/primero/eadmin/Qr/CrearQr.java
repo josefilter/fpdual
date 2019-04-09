@@ -16,7 +16,7 @@ import es.fpdual.primero.eadmin.modelo.Usuario;
 
 public class CrearQr {
 
-	public static void main(String[] args) throws Exception { 
+	public static void CrearQrPdf() { 
 
 		Date fecha = new Date();
 		Usuario usuario = new Usuario(1, "Pepe Martín", "jefe");
@@ -24,12 +24,12 @@ public class CrearQr {
 		
 		Document codigoQR = new Document(new Rectangle(360, 852));
 		try {
-		PdfWriter writer = PdfWriter.getInstance(codigoQR, new FileOutputStream("codigoQR.pdf"));
-		codigoQR.open();
-		BarcodeQRCode codigo = new BarcodeQRCode(documento1.getNombre(), 0, 0, null);
-		Image qr_image = codigo.getImage();
-		codigoQR.add(qr_image);
-		codigoQR.close();
+			PdfWriter writer = PdfWriter.getInstance(codigoQR, new FileOutputStream("codigoQR.pdf"));
+			codigoQR.open();
+			BarcodeQRCode codigo = new BarcodeQRCode(documento1.getNombre(), 0, 0, null);
+			Image qr_image = codigo.getImage();
+			codigoQR.add(qr_image);
+			codigoQR.close();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
