@@ -1,44 +1,443 @@
-2019-04-04 11:28:45 INFO  EadminApplication:23 - Iniciando servicio
-2019-04-04 11:28:48 TRACE EadminApplication:17 - Se ha creado un documento contable
-2019-04-04 11:28:48 WARN  EadminApplication:18 - Se ha creado un documento factura
-2019-04-04 11:28:48 INFO  EadminApplication:30 - Finalizando servicio
-2019-04-04 11:28:54 ERROR EadminApplication:40 - El fichero no existe
-2019-04-04 11:28:54 TRACE EadminApplication:57 - 
+2019-04-09 12:13:58 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:14:00 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:14:00 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:14:00 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:14:30 INFO  EadminApplication:250 - Archivo creado existosamente
+2019-04-09 12:14:30 ERROR EadminApplication:54 - El fichero YA existe
+2019-04-09 12:14:30 TRACE EadminApplication:76 - 
 **********************************************
-2019-04-04 11:28:54 TRACE EadminApplication:58 - 
+2019-04-09 12:14:30 TRACE EadminApplication:77 - 
 Documeto creado correctamente
-2019-04-04 11:28:54 TRACE EadminApplication:59 - 
+2019-04-09 12:14:30 TRACE EadminApplication:78 - 
 ID: 1
-2019-04-04 11:28:54 TRACE EadminApplication:60 - 
-NOMBRE: Documento 2
-2019-04-04 11:28:54 TRACE EadminApplication:61 - 
+2019-04-09 12:14:30 TRACE EadminApplication:79 - 
+NOMBRE: Documento 5
+2019-04-09 12:14:30 TRACE EadminApplication:80 - 
 USUARIO: 
 	id: 6
 	nombre: usuario6
 	cargo: cargo6
-2019-04-04 11:28:54 TRACE EadminApplication:62 - 
-FECHA CREACION: Thu Apr 04 11:28:54 CEST 2019
-2019-04-04 11:28:54 TRACE EadminApplication:63 - 
+2019-04-09 12:14:30 TRACE EadminApplication:81 - 
+FECHA CREACION: Tue Apr 09 12:14:30 CEST 2019
+2019-04-09 12:14:30 TRACE EadminApplication:82 - 
 TIPO DOCUMENTO: DOCUMENTO_CONTABLE
-2019-04-04 11:28:54 TRACE EadminApplication:64 - 
+2019-04-09 12:14:30 TRACE EadminApplication:83 - 
 **********************************************
-2019-04-04 11:29:09 ERROR EadminApplication:38 - El fichero YA existe
-2019-04-04 11:29:09 TRACE EadminApplication:57 - 
+2019-04-09 12:29:55 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:29:57 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:29:57 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:29:57 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:30:15 INFO  EadminApplication:260 - Archivo creado existosamente
+2019-04-09 12:30:15 ERROR EadminApplication:64 - El fichero YA existe
+2019-04-09 12:30:15 TRACE EadminApplication:86 - 
 **********************************************
-2019-04-04 11:29:09 TRACE EadminApplication:58 - 
+2019-04-09 12:30:15 TRACE EadminApplication:87 - 
 Documeto creado correctamente
-2019-04-04 11:29:09 TRACE EadminApplication:59 - 
-ID: 2
-2019-04-04 11:29:09 TRACE EadminApplication:60 - 
-NOMBRE: Documento 2
-2019-04-04 11:29:09 TRACE EadminApplication:61 - 
+2019-04-09 12:30:15 TRACE EadminApplication:88 - 
+ID: 1
+2019-04-09 12:30:15 TRACE EadminApplication:89 - 
+NOMBRE: Documento 5
+2019-04-09 12:30:15 TRACE EadminApplication:90 - 
 USUARIO: 
 	id: 6
 	nombre: usuario6
 	cargo: cargo6
-2019-04-04 11:29:09 TRACE EadminApplication:62 - 
-FECHA CREACION: Thu Apr 04 11:29:09 CEST 2019
-2019-04-04 11:29:09 TRACE EadminApplication:63 - 
+2019-04-09 12:30:15 TRACE EadminApplication:91 - 
+FECHA CREACION: Tue Apr 09 12:30:15 CEST 2019
+2019-04-09 12:30:15 TRACE EadminApplication:92 - 
 TIPO DOCUMENTO: DOCUMENTO_CONTABLE
-2019-04-04 11:29:09 TRACE EadminApplication:64 - 
+2019-04-09 12:30:15 TRACE EadminApplication:93 - 
 **********************************************
+2019-04-09 12:31:23 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:31:25 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:31:25 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:31:25 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:31:35 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:31:35 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:31:35 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:31:35 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:31:35 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:31:35 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:31:35 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:31:35 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:31:35 CEST 2019
+2019-04-09 12:31:35 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:31:35 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:34:05 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:34:15 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:34:17 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:34:17 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:34:17 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:34:24 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:34:24 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:34:24 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:34:24 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:34:24 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:34:24 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:34:24 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:34:24 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:34:24 CEST 2019
+2019-04-09 12:34:24 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:34:24 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:36:44 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:36:46 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:36:46 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:36:46 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:37:01 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:37:01 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:37:01 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:37:01 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:37:01 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:37:01 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:37:01 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:37:01 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:37:01 CEST 2019
+2019-04-09 12:37:01 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:37:01 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:37:15 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:37:15 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:37:15 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:37:15 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:37:15 TRACE EadminApplication:89 - 
+ID: 2
+2019-04-09 12:37:15 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:37:15 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:37:15 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:37:15 CEST 2019
+2019-04-09 12:37:15 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:37:15 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:37:43 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:37:46 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:37:46 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:37:46 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:37:53 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:37:53 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:37:53 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:37:53 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:37:53 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:37:53 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:37:53 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:37:53 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:37:52 CEST 2019
+2019-04-09 12:37:53 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:37:53 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:38:39 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:38:42 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:38:42 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:38:42 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:38:52 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:38:52 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:38:52 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:38:52 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:38:52 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:38:52 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:38:52 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:38:52 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:38:51 CEST 2019
+2019-04-09 12:38:52 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:38:52 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:48:31 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:48:34 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:48:34 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:48:34 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:48:43 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:48:43 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:48:43 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:48:43 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:48:43 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:48:43 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:48:43 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:48:43 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:48:42 CEST 2019
+2019-04-09 12:48:43 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:48:43 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:49:27 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:49:30 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:49:30 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:49:30 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:49:36 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:49:36 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:49:36 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:49:36 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:49:36 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:49:36 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:49:36 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:49:36 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:49:35 CEST 2019
+2019-04-09 12:49:36 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:49:36 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:51:38 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 12:51:41 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:51:41 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:51:41 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 12:51:51 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:51:52 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:51:52 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:51:52 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:51:52 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:51:52 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:51:52 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:51:52 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:51:51 CEST 2019
+2019-04-09 12:51:52 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:51:52 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 12:55:07 INFO  EadminApplication:26 - Iniciando servicio
+2019-04-09 12:55:09 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 12:55:09 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 12:55:09 INFO  EadminApplication:33 - Finalizando servicio
+2019-04-09 12:55:18 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 12:55:19 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 12:55:19 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 12:55:19 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 12:55:19 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 12:55:19 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 12:55:19 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 12:55:19 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 12:55:18 CEST 2019
+2019-04-09 12:55:19 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 12:55:19 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:05:19 INFO  EadminApplication:26 - Iniciando servicio
+2019-04-09 13:05:22 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 13:05:22 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 13:05:22 INFO  EadminApplication:33 - Finalizando servicio
+2019-04-09 13:05:22 ERROR QrPdf:38 - java.io.FileNotFoundException: codigoQR.png (El sistema no puede encontrar el archivo especificado)
+2019-04-09 13:05:28 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 13:05:28 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 13:05:28 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 13:05:28 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 13:05:28 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 13:05:28 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 13:05:28 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 13:05:28 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 13:05:27 CEST 2019
+2019-04-09 13:05:28 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 13:05:28 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:06:35 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 13:06:35 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 13:06:35 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 13:06:35 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 13:06:35 TRACE EadminApplication:89 - 
+ID: 2
+2019-04-09 13:06:35 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 13:06:35 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 13:06:35 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 13:06:35 CEST 2019
+2019-04-09 13:06:35 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 13:06:35 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:06:41 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 13:06:41 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 13:06:41 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 13:06:41 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 13:06:41 TRACE EadminApplication:89 - 
+ID: 3
+2019-04-09 13:06:41 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 13:06:41 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 13:06:41 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 13:06:41 CEST 2019
+2019-04-09 13:06:41 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 13:06:41 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:06:41 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 13:06:41 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 13:06:41 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 13:06:41 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 13:06:41 TRACE EadminApplication:89 - 
+ID: 4
+2019-04-09 13:06:41 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 13:06:41 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 13:06:41 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 13:06:41 CEST 2019
+2019-04-09 13:06:41 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 13:06:41 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:13:28 INFO  EadminApplication:26 - Iniciando servicio
+2019-04-09 13:13:31 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 13:13:31 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 13:13:31 INFO  EadminApplication:33 - Finalizando servicio
+2019-04-09 13:13:31 ERROR QrPdf:39 - java.io.FileNotFoundException: codigoQR.png (El sistema no puede encontrar el archivo especificado)
+2019-04-09 13:13:41 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 13:13:41 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 13:13:41 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 13:13:41 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 13:13:41 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 13:13:41 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 13:13:41 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 13:13:41 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 13:13:40 CEST 2019
+2019-04-09 13:13:41 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 13:13:41 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:19:40 INFO  EadminApplication:26 - Iniciando servicio
+2019-04-09 13:19:43 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 13:19:43 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 13:19:43 INFO  EadminApplication:33 - Finalizando servicio
+2019-04-09 13:19:44 ERROR QrPdf:39 - java.io.FileNotFoundException: codigoQR.png (El sistema no puede encontrar el archivo especificado)
+2019-04-09 13:19:51 INFO  EadminApplication:261 - Archivo creado existosamente
+2019-04-09 13:19:51 ERROR EadminApplication:65 - El fichero YA existe
+2019-04-09 13:19:51 TRACE EadminApplication:87 - 
+**********************************************
+2019-04-09 13:19:51 TRACE EadminApplication:88 - 
+Documeto creado correctamente
+2019-04-09 13:19:51 TRACE EadminApplication:89 - 
+ID: 1
+2019-04-09 13:19:51 TRACE EadminApplication:90 - 
+NOMBRE: Documento 5
+2019-04-09 13:19:51 TRACE EadminApplication:91 - 
+USUARIO: 
+	id: 6
+	nombre: usuario6
+	cargo: cargo6
+2019-04-09 13:19:51 TRACE EadminApplication:92 - 
+FECHA CREACION: Tue Apr 09 13:19:50 CEST 2019
+2019-04-09 13:19:51 TRACE EadminApplication:93 - 
+TIPO DOCUMENTO: DOCUMENTO_CONTABLE
+2019-04-09 13:19:51 TRACE EadminApplication:94 - 
+**********************************************
+2019-04-09 13:49:43 INFO  EadminApplication:25 - Iniciando servicio
+2019-04-09 13:49:46 TRACE EadminApplication:18 - Se ha creado un documento contable
+2019-04-09 13:49:46 WARN  EadminApplication:18 - Se ha creado un documento factura
+2019-04-09 13:49:46 INFO  EadminApplication:32 - Finalizando servicio
+2019-04-09 13:50:09 INFO  EadminApplication:25 - Iniciando servicio

@@ -11,7 +11,8 @@ public class DocumentoContable extends Documento {
 	private final String numeroOperacionContable;
 	private static final Logger logger = LogManager.getLogger(EadminApplication.class);
 
-	public DocumentoContable(int id, String nombre, Usuario usuario, Date fechaCreacion, String numeroOperacionContable) {
+	public DocumentoContable(int id, String nombre, Usuario usuario, Date fechaCreacion,
+			String numeroOperacionContable) {
 		super(id, nombre, usuario, fechaCreacion, TipoDocumento.DOCUMENTO_CONTABLE);
 		this.numeroOperacionContable = numeroOperacionContable;
 		logger.trace("Se ha creado un documento contable");
@@ -19,5 +20,5 @@ public class DocumentoContable extends Documento {
 
 	public String getNumeroOperacionContable() {
 		return numeroOperacionContable;
-	}	
+	}
 }

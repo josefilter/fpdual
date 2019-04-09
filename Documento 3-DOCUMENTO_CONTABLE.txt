@@ -1,8 +1,0 @@
-ID: 3
-Nombre: Documento 3
-Usuario: 
-	id: 6
-	nombre: usuario6
-	cargo: cargo6
-Fecha Creacion: Thu Apr 04 11:37:39 CEST 2019
-Tipo Documento: DOCUMENTO_CONTABLE
